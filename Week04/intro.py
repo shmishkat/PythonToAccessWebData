@@ -1,5 +1,10 @@
 import socket
 
+print(ord('H'))
+
+#python strings to bytes
+
+
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 mysock.connect(('data.pr4e.org',80))
@@ -11,6 +16,3 @@ while True:
     if(len(data) < 1):
         break
     print(data.decode())
-
-mysock.close()
-
